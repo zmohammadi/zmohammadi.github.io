@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section id="one" >
+<section id="one" style="font-family: BMI">
     <div class="container">
         {% for post in site.posts limit:1 %}
             <article>
@@ -12,7 +12,7 @@ layout: default
                 <section class="post-content">
                     {{ post.excerpt }}
                 </section>
-                <section class="special">
+                <section class="special"style="font-family: BMI">
                     <ul class="actions">
                         <li><a href="{{ site.baseurl }}{{ post.url }}" class="button special">
                       بیشتربخوانید
@@ -28,7 +28,7 @@ layout: default
         <div class="features">
         {% for post in site.posts offset:1 %}
             <article>
-                <section class="excerpt">
+                <section class="excerpt"style="font-family: BMI">
                 <header>
                     <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
                 </header>
